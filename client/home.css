@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+img {
+  height: 30rem;
+  width: 30rem;
+}
+.wel {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.bot {
+  color: #78deb2;
+  font-weight: bold;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #78deb2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #78deb2;
+}
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #78deb2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
+}
