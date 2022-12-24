@@ -65,19 +65,22 @@ body {
 }
 
 .profile {
-  width: 36px;
-  height: 36px;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
 
-  background: #5436da;
+  /* background: #5436da; */
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.ai .profile {
+/* .ai .profile {
   background: #10a37f;
+} */
+img {
+  border-radius: 50px;
 }
 
 .profile img {

@@ -1,5 +1,7 @@
-import bot from "./assets/assets/bot.svg";
-import user from "./assets/assets/user.svg";
+// import bot from "./assets/assets/bot.svg";
+// import user from "./assets/assets/user.svg";
+import bot from "./assets/assets/bot.gif";
+import user from "./assets/assets/user.gif";
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
@@ -84,7 +86,7 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
 
-  const response = await fetch("https://codex-im0y.onrender.com/", {
+  const response = await fetch("https://sonnytech-bot.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
