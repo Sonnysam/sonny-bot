@@ -6,9 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sonnybot - Your AI pair developer</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div id="app">
+      <div class="popup">
+        <div class="popup__content">
+          <div class="popup__left"></div>
+          <div class="popup__right">
+            <button class="popup__close" id="close">&times;</button>
+            <h2 class="heading-secondary u-margin-bottom-small">
+              Welcome to Sonnybot <i class="fa-solid fa-robot"></i>
+            </h2>
+            <p class="popup__text">
+              Sonnybot is a chatbot that helps you to learn and practice
+              programming. You can ask him questions about programming and he
+              will answer you. You can also ask him to general questions.
+            </p>
+            <button class="button" id="start">Get started</button>
+          </div>
+        </div>
+      </div>
       <div id="chat_container"></div>
       <form>
         <textarea name="prompt" rows="1" placeholder="Need help?"></textarea>

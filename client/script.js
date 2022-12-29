@@ -1,7 +1,20 @@
-// import bot from "./assets/assets/bot.svg";
-// import user from "./assets/assets/user.svg";
 import bot from "./assets/assets/bot.gif";
 import user from "./assets/assets/user.gif";
+
+// POP UP FUNCTIONALITY
+window.addEventListener("load", function () {
+  setTimeout(function open(event) {
+    document.querySelector(".popup").style.display = "block";
+  }, 2000);
+});
+
+document.querySelector("#close").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "none";
+});
+
+document.querySelector("#start").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "none";
+});
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
@@ -107,7 +120,7 @@ const handleSubmit = async (e) => {
   } else {
     const err = await response.text();
 
-    messageDiv.innerHTML = "Something went wrong";
+    messageDiv.innerHTML = "I don't have enough gob3~net in my belly 😒";
     alert(err);
   }
 };
