@@ -9,7 +9,7 @@
 /* POPUP STYLE */
 .popup {
   background-color: #ffff;
-  width: 350px;
+  width: 360px;
   padding: 30px 40px;
   position: absolute;
   top: 50%;
@@ -19,8 +19,6 @@
   display: none;
 }
 h2 {
-  font-size: 18px;
-  font-weight: 600;
   margin-bottom: 10px;
 }
 .popup__close {
